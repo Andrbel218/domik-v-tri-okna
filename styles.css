@@ -654,11 +654,13 @@ a {
   display: block;
   width: 100%;
   padding: 0;
-  border: 0;
-  border-radius: 18px;
+  border: 6px solid var(--cream);
+  border-radius: 22px;
   overflow: hidden;
-  background: #e9dcc6;
-  box-shadow: 0 14px 34px -22px rgba(60, 40, 20, 0.5);
+  background: var(--cream);
+  box-shadow:
+    0 0 0 1px var(--line),
+    0 14px 34px -22px rgba(60, 40, 20, 0.5);
   line-height: 0;
   cursor: zoom-in;
 }
@@ -666,7 +668,7 @@ a {
 .gallery__btn img {
   width: 100%;
   height: auto;
-  border-radius: 18px;
+  border-radius: 15px;
   transition: transform 0.7s var(--ease);
 }
 
@@ -704,14 +706,18 @@ a {
 
 .banner {
   margin: 18px 0 0;
-  border-radius: 20px;
+  border: 6px solid var(--cream);
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: var(--shadow-soft);
+  box-shadow:
+    0 0 0 1px var(--line),
+    var(--shadow-soft);
 }
 
 .banner img {
   width: 100%;
   height: clamp(140px, 18vw, 240px);
+  border-radius: 17px;
   object-fit: cover;
 }
 
@@ -1373,6 +1379,15 @@ html.js [data-reveal].is-in {
   .gallery__btn,
   .gallery__btn img {
     border-radius: 13px;
+  }
+
+  .gallery__btn {
+    border-width: 4px;
+    border-radius: 16px;
+  }
+
+  .gallery__btn img {
+    border-radius: 11px;
   }
 
   .gallery__btn::after {
