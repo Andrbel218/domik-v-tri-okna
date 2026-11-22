@@ -8,11 +8,11 @@
   --cream: #fffaf1;
   --ink: #2e211b;
   --muted: #6f5a4a;
-  --muted-soft: #8f7a68;
+  --muted-soft: #7a6554;
   --line: rgba(56, 38, 28, 0.12);
   --line-strong: rgba(143, 106, 52, 0.35);
   --ochre: #b08a4f;
-  --ochre-deep: #8f6a34;
+  --ochre-deep: #7d5926;
   --ochre-light: #e9c88f;
   --plum: #8d5b77;
   --forest: #4e6a50;
@@ -288,7 +288,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: var(--ochre);
+  color: var(--ochre-deep);
 }
 
 .section-head {
@@ -1038,7 +1038,7 @@ a {
   margin-top: 26px;
   font-size: 10.5px;
   letter-spacing: 0.04em;
-  color: rgba(246, 236, 220, 0.4);
+  color: rgba(246, 236, 220, 0.55);
 }
 
 /* ---------- Lightbox ---------- */
