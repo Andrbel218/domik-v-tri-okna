@@ -1,4 +1,6 @@
 .DS_Store
 .gh-token
+/tmp/
+.playwright-mcp/
 assets/img/tmp/
 картинки/

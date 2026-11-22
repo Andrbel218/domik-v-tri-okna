@@ -3,34 +3,443 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Домик в три окна — сайт скоро</title>
-  <meta name="description" content="Домик в три окна — штучные изделия ручной работы из дерева. Сайт скоро.">
-  <style>
-    :root { color-scheme: light; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100svh;
-      display: grid;
-      place-items: center;
-      padding: 32px;
-      background: #f7f1e7;
-      color: #3d2b23;
-      font-family: Georgia, "Times New Roman", serif;
-      text-align: center;
-    }
-    .card { max-width: 34rem; }
-    .house { width: 180px; height: auto; margin: 0 auto 24px; display: block; mix-blend-mode: multiply; }
-    h1 { margin: 0 0 12px; font-size: clamp(28px, 5vw, 44px); font-weight: 400; letter-spacing: .02em; }
-    p { margin: 0; font-size: clamp(16px, 2.5vw, 20px); line-height: 1.5; color: #6b5445; }
-    .dot { color: #b08a4f; }
-  </style>
+  <title>Домик в три окна — деревянные домики, магниты и декор ручной работы</title>
+  <meta name="description" content="Домик в три окна — штучные изделия ручной работы из дерева: миниатюрные домики, магниты, конфеты-самоцветы и новогодний декор. Андрей Беляев, 8 903 715-65-76.">
+  <link rel="canonical" href="https://andrbel218.github.io/domik-v-tri-okna/">
+  <meta name="theme-color" content="#faf3e7">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Домик в три окна — изделия ручной работы из дерева">
+  <meta property="og:description" content="Миниатюрные домики, магниты, конфеты-самоцветы и новогодний декор. Каждая вещь расписана вручную.">
+  <meta property="og:url" content="https://andrbel218.github.io/domik-v-tri-okna/">
+  <meta property="og:image" content="https://andrbel218.github.io/domik-v-tri-okna/assets/img/hero-main.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Golos+Text:wght@400;500;600&family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Домик в три окна",
+    "url": "https://andrbel218.github.io/domik-v-tri-okna/",
+    "logo": "https://andrbel218.github.io/domik-v-tri-okna/assets/img/logo.jpg",
+    "founder": "Андрей Беляев",
+    "telephone": "+79037156576",
+    "description": "Штучные изделия ручной работы из дерева: миниатюрные домики, магниты, конфеты-самоцветы и новогодний декор."
+  }
+  </script>
 </head>
 <body>
-  <main class="card">
-    <img class="house" src="assets/img/slides/IMG_20261122_214328.jpg" alt="Домик в три окна">
-    <h1>Домик в три окна</h1>
-    <p>Штучные изделия ручной работы из дерева.<br>Сайт скоро откроется.</p>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Домик в три окна — ручная работа из дерева, на главную">
+        <img class="brand__mark" src="assets/img/logo-mark.jpg" alt="" width="215" height="140">
+        <span class="brand__text">
+          <span class="brand__name">Домик в три окна</span>
+          <span class="brand__note">ручная работа из дерева</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#domiki">Коллекция</a>
+        <a href="#magnity">Магниты</a>
+        <a href="#dekor">Декор</a>
+        <a href="#ceny">Цены</a>
+        <a href="#kontakty">Контакты</a>
+        <a class="nav__phone" href="tel:+79037156576">8 903 715-65-76</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+79037156576">8 903 715-65-76</a>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-controls="nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Блок «про идею»: заказчик пришлёт отдельный слайд. Вставить перед .hero. -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content" data-reveal>
+          <p class="eyebrow">Штучные изделия ручной работы из дерева</p>
+          <h1 class="hero__title">Домик <em>в три окна</em></h1>
+          <p class="hero__quote">Бывает, найдёшь близкую сердцу вещь, отвлечёшься на неё и замедляется время, стихает суета, радуем…</p>
+          <p class="hero__lead">Деревянные домики, магниты и миниатюры, в которых узнаётся место, где вам было тепло. Каждая вещь расписана вручную — и существует в единственном экземпляре.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#domiki">Смотреть коллекцию</a>
+            <a class="btn btn--ghost" href="tel:+79037156576">Позвонить</a>
+          </div>
+          <p class="hero__meta">Андрей Беляев <span aria-hidden="true">·</span> автор и мастер</p>
+        </div>
+
+        <div class="hero__media" data-reveal>
+          <figure class="hero__photo">
+            <img src="assets/img/hero-main.jpg" alt="Деревянные домики-брелоки и миниатюры на оранжевой вязаной салфетке" width="404" height="409" fetchpriority="high">
+          </figure>
+          <figure class="hero__inset">
+            <img src="assets/img/gallery/214317-08.jpg" alt="Магниты-домики в красной тарелке" width="213" height="216" loading="lazy">
+          </figure>
+          <div class="hero__badge" aria-hidden="true">
+            <span>Миниатюры</span>
+            <span>Магниты</span>
+            <span>Декор</span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="stitch"></div>
+      </div>
+    </section>
+
+    <section class="section section--categories" id="kategorii">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Что мы делаем</p>
+          <h2>Маленькие дома и вещи с историей</h2>
+          <p class="section-head__sub">Всё начинается с дома, который хочется забрать с собой: с фасадом, окнами и ставнями, расписанными вручную.</p>
+        </div>
+
+        <div class="cards">
+          <a class="cat-card" href="#domiki" data-reveal>
+            <span class="cat-card__media">
+              <img src="assets/img/gallery/214313-05.jpg" alt="Домики-миниатюры с зимней росписью" width="221" height="213" loading="lazy">
+            </span>
+            <span class="cat-card__body">
+              <span class="cat-card__title">Домики</span>
+              <span class="cat-card__text">Миниатюры с зимними и летними фасадами — двойными и одинарными.</span>
+              <span class="cat-card__link">Смотреть коллекцию</span>
+            </span>
+          </a>
+
+          <a class="cat-card" href="#magnity" data-reveal>
+            <span class="cat-card__media">
+              <img src="assets/img/gallery/214317-01.jpg" alt="Магниты-домики с разными фасадами" width="210" height="154" loading="lazy">
+            </span>
+            <span class="cat-card__body">
+              <span class="cat-card__title">Магниты</span>
+              <span class="cat-card__text">О домах и музеях, наборные и игрушечные. Маленькие истории на память.</span>
+              <span class="cat-card__link">Смотреть магниты</span>
+            </span>
+          </a>
+
+          <a class="cat-card" href="#dekor" data-reveal>
+            <span class="cat-card__media">
+              <img src="assets/img/gallery/214320-03.jpg" alt="Конфеты-самоцветы с росписью на красном фоне" width="212" height="194" loading="lazy">
+            </span>
+            <span class="cat-card__body">
+              <span class="cat-card__title">Декор</span>
+              <span class="cat-card__text">Конфеты-самоцветы, новогодние подвесы и подарочная упаковка.</span>
+              <span class="cat-card__link">Смотреть декор</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="domiki">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">01</span> Коллекция</p>
+          <h2>Домики зимой и летом</h2>
+          <p class="section-head__sub">Один и тот же домик может быть зимним и летним, с одинарным или двойным фасадом. Роспись повторяет архитектуру домов, в которых хочется жить.</p>
+        </div>
+
+        <ul class="chips" data-reveal>
+          <li class="chip"><i style="--chip:#8b3a31"></i>Зимой и летом</li>
+          <li class="chip"><i style="--chip:#b08a4f"></i>Двойной фасад</li>
+          <li class="chip"><i style="--chip:#4e6a50"></i>Одинарный фасад</li>
+        </ul>
+
+        <div class="gallery" data-gallery>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214313-01.jpg" data-caption="Домики с зимними и летними фасадами" aria-label="Открыть фото: домики с зимними и летними фасадами">
+              <img src="assets/img/gallery/214313-01.jpg" alt="Набор домиков с зимними и летними фасадами" width="221" height="216" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214313-02.jpg" data-caption="Два расписных домика" aria-label="Открыть фото: два расписных домика">
+              <img src="assets/img/gallery/214313-02.jpg" alt="Два расписных домика на садовом столе" width="220" height="216" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214313-03.jpg" data-caption="Домики с двойным фасадом" aria-label="Открыть фото: домики с двойным фасадом">
+              <img src="assets/img/gallery/214313-03.jpg" alt="Домики с двойным фасадом на деревянной скамье" width="215" height="217" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214313-04.jpg" data-caption="Домики с яркой росписью" aria-label="Открыть фото: домики с яркой росписью">
+              <img src="assets/img/gallery/214313-04.jpg" alt="Яркие домики с росписью на красном фоне" width="214" height="216" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214313-05.jpg" data-caption="Домики-магниты с зимней росписью" aria-label="Открыть фото: домики-магниты с зимней росписью">
+              <img src="assets/img/gallery/214313-05.jpg" alt="Домики-магниты с зимними фасадами на красной ткани" width="221" height="213" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214313-06.jpg" data-caption="Домики на летней веранде" aria-label="Открыть фото: домики на летней веранде">
+              <img src="assets/img/gallery/214313-06.jpg" alt="Миниатюрные домики на летней веранде" width="221" height="201" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214313-07.jpg" data-caption="Домики с разными фасадами" aria-label="Открыть фото: домики с разными фасадами">
+              <img src="assets/img/gallery/214313-07.jpg" alt="Домики с разными фасадами на тканой салфетке" width="220" height="206" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214313-08.jpg" data-caption="Домики среди зелени" aria-label="Открыть фото: домики среди зелени">
+              <img src="assets/img/gallery/214313-08.jpg" alt="Расписные домики среди зелени" width="214" height="207" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214313-09.jpg" data-caption="Домик на берегу реки" aria-label="Открыть фото: домик на берегу реки">
+              <img src="assets/img/gallery/214313-09.jpg" alt="Домик с синей крышей на берегу реки" width="216" height="134" loading="lazy">
+            </button>
+          </figure>
+        </div>
+
+        <figure class="banner" data-reveal>
+          <img src="assets/img/gallery/214313-10.jpg" alt="Ряд домиков с зимней росписью" width="679" height="143" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="magnity">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">02</span> Магниты</p>
+          <h2>Магниты и миниатюры</h2>
+          <p class="section-head__sub">Домики о домах и музеях, наборные и игрушечные — и просто так, для настроения. Каждый магнит лепится и расписывается вручную.</p>
+        </div>
+
+        <ul class="chips" data-reveal>
+          <li class="chip"><i style="--chip:#8b3a31"></i>О домах и музеях</li>
+          <li class="chip"><i style="--chip:#b08a4f"></i>Наборные и игрушечные</li>
+          <li class="chip"><i style="--chip:#8d5b77"></i>И просто так</li>
+        </ul>
+
+        <div class="gallery" data-gallery>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214317-01.jpg" data-caption="Магниты-домики с разными фасадами" aria-label="Открыть фото: магниты-домики с разными фасадами">
+              <img src="assets/img/gallery/214317-01.jpg" alt="Магниты-домики с разными фасадами на тёмном фоне" width="210" height="154" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214317-02.jpg" data-caption="Наборные магниты-домики" aria-label="Открыть фото: наборные магниты-домики">
+              <img src="assets/img/gallery/214317-02.jpg" alt="Наборные магниты-домики, рассыпанные на светлой поверхности" width="209" height="193" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214317-04.jpg" data-caption="Домики-магниты на деревянном столе" aria-label="Открыть фото: домики-магниты на деревянном столе">
+              <img src="assets/img/gallery/214317-04.jpg" alt="Домики-магниты на деревянном столе" width="208" height="191" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214317-05.jpg" data-caption="Маленькие наборные домики" aria-label="Открыть фото: маленькие наборные домики">
+              <img src="assets/img/gallery/214317-05.jpg" alt="Маленькие наборные домики на синей ткани" width="210" height="183" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214317-06.jpg" data-caption="Магниты-домики с навесами" aria-label="Открыть фото: магниты-домики с навесами">
+              <img src="assets/img/gallery/214317-06.jpg" alt="Магниты-домики с разноцветными навесами" width="216" height="211" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214317-08.jpg" data-caption="Домики-магниты в красной тарелке" aria-label="Открыть фото: домики-магниты в красной тарелке">
+              <img src="assets/img/gallery/214317-08.jpg" alt="Магниты-домики в красной тарелке" width="213" height="216" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214317-09.jpg" data-caption="Домики-магниты в подарочной упаковке" aria-label="Открыть фото: домики-магниты в подарочной упаковке">
+              <img src="assets/img/gallery/214317-09.jpg" alt="Домики-магниты в подарочной упаковке" width="213" height="193" loading="lazy">
+            </button>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dekor">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">03</span> Декор</p>
+          <h2>Конфеты-самоцветы и новогодний декор</h2>
+          <p class="section-head__sub">Подвесы на ёлку, подарочные наборы и маленькие конфеты-самоцветы. Всё, чем можно украсить дом и порадовать близких.</p>
+        </div>
+
+        <ul class="chips" data-reveal>
+          <li class="chip"><i style="--chip:#8b3a31"></i>Конфеты-самоцветы</li>
+          <li class="chip"><i style="--chip:#4e6a50"></i>Новогодний декор</li>
+          <li class="chip"><i style="--chip:#b08a4f"></i>Подвес или просто так</li>
+        </ul>
+
+        <div class="gallery" data-gallery>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214320-01.jpg" data-caption="Конфеты-самоцветы в коробке" aria-label="Открыть фото: конфеты-самоцветы в коробке">
+              <img src="assets/img/gallery/214320-01.jpg" alt="Конфеты-самоцветы в подарочной коробке" width="214" height="192" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214320-02.jpg" data-caption="Ёлочные подвесы-домики" aria-label="Открыть фото: ёлочные подвесы-домики">
+              <img src="assets/img/gallery/214320-02.jpg" alt="Ёлочные подвесы в виде домиков" width="206" height="192" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214320-03.jpg" data-caption="Конфеты-самоцветы с росписью" aria-label="Открыть фото: конфеты-самоцветы с росписью">
+              <img src="assets/img/gallery/214320-03.jpg" alt="Конфеты-самоцветы с росписью на красном фоне" width="212" height="194" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214320-04.jpg" data-caption="Конфеты-самоцветы в упаковке" aria-label="Открыть фото: конфеты-самоцветы в упаковке">
+              <img src="assets/img/gallery/214320-04.jpg" alt="Конфеты-самоцветы в прозрачной упаковке" width="212" height="196" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214320-05.jpg" data-caption="Подарочные наборы" aria-label="Открыть фото: подарочные наборы">
+              <img src="assets/img/gallery/214320-05.jpg" alt="Подарочные наборы конфет-самоцветов" width="212" height="358" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214320-06.jpg" data-caption="Конфеты-самоцветы крупным планом" aria-label="Открыть фото: конфеты-самоцветы крупным планом">
+              <img src="assets/img/gallery/214320-06.jpg" alt="Крупный план конфет-самоцветов" width="204" height="189" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214320-07.jpg" data-caption="Горка конфет-самоцветов" aria-label="Открыть фото: горка конфет-самоцветов">
+              <img src="assets/img/gallery/214320-07.jpg" alt="Горка конфет-самоцветов" width="209" height="188" loading="lazy">
+            </button>
+          </figure>
+          <figure class="gallery__item" data-reveal>
+            <button class="gallery__btn" type="button" data-lightbox data-full="assets/img/gallery/214320-08.jpg" data-caption="Конфеты-самоцветы рядом с бокалом" aria-label="Открыть фото: конфеты-самоцветы рядом с бокалом">
+              <img src="assets/img/gallery/214320-08.jpg" alt="Конфеты-самоцветы рядом с бокалом" width="213" height="184" loading="lazy">
+            </button>
+          </figure>
+        </div>
+
+        <figure class="banner" data-reveal>
+          <img src="assets/img/gallery/214320-09.jpg" alt="Упакованные конфеты-самоцветы" width="682" height="154" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="ceny">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__num">04</span> Варианты работ</p>
+          <h2>Цены и размеры</h2>
+          <p class="section-head__sub">Каждое изделие делается вручную, поэтому стоимость зависит от размера, сложности росписи и упаковки. Позвоните — подберём вариант и назовём точную цену.</p>
+        </div>
+
+        <div class="price-grid">
+          <div class="price-card" data-reveal>
+            <div class="price-card__top">
+              <span class="price-card__title">Что можно заказать</span>
+              <span class="tag">Можно подписать город</span>
+            </div>
+
+            <ul class="price-list">
+              <li class="price-row">
+                <span class="price-row__name">Домик с мезонином, с двумя фасадами</span>
+                <span class="price-row__size">5 × 5 × 5 см</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Домик с мезонином, с подвесом</span>
+                <span class="price-row__size">4 × 4 × 2 см</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Брелок / обвес</span>
+                <span class="price-row__size">2,5 × 2,5 × 0,5 см<br>или 1,5 × 1,5 × 1,5 см</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Магнит большой (брошь / значок)</span>
+                <span class="price-row__size">4,5 × 4 × 0,5 см</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Магнит малый (брошь / значок)</span>
+                <span class="price-row__size">3 × 3 × 0,5 см</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Магнит-кроха (брошь / значок)</span>
+                <span class="price-row__size">2,5 × 2 × 0,5 см</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Домик с мезонином малый, с подвесом</span>
+                <span class="price-row__size">размер уточняется</span>
+              </li>
+              <li class="price-row">
+                <span class="price-row__name">Конфеты-самоцветы</span>
+                <span class="price-row__size">7 × 2,5 × 1,5 см</span>
+              </li>
+            </ul>
+
+            <p class="price-card__note">Упаковка: пакет с клеевым краем и фоновая подложка. Стоимость — по запросу.</p>
+          </div>
+
+          <aside class="price-aside" data-reveal>
+            <p class="price-aside__script">Сделаем под ваш повод</p>
+            <p class="price-aside__text">Подарок на новоселье, память о поездке, украшение на ёлку или маленький знак внимания — расскажите идею, и мы подберём форму и роспись.</p>
+            <a class="btn btn--primary btn--wide" href="tel:+79037156576">Узнать стоимость</a>
+            <a class="price-aside__phone" href="tel:+79037156576">8 903 715-65-76</a>
+            <p class="price-aside__note">Андрей Беляев · отвечаем на звонки и сообщения</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote" aria-label="О сувенире">
+      <img class="quote__bg" src="assets/img/quote-bg.jpg" alt="" width="1024" height="408" loading="lazy" aria-hidden="true">
+      <div class="container quote__inner" data-reveal>
+        <p class="quote__label">О сувенире</p>
+        <blockquote class="quote__text">Сувенир — он и про место, где ты счастливо гостил, и знак внимания, чтобы разделить радость. Можно связать сувенир с важным для тебя местом, событием или оставить его свободным — просто тёплым, душевным и особенным.</blockquote>
+      </div>
+    </section>
+
+    <footer class="footer" id="kontakty">
+      <div class="container footer__inner">
+        <div class="footer__logo-wrap" data-reveal>
+          <img class="footer__logo" src="assets/img/logo.jpg" alt="Домик в три окна" width="280" height="190" loading="lazy">
+        </div>
+        <p class="footer__script" data-reveal>на память о месте, где было хорошо</p>
+        <h2 class="footer__title" data-reveal>Маленький дом, который всегда с вами</h2>
+        <p class="footer__text" data-reveal>Позвоните — расскажем, что сейчас есть в наличии, и сделаем вещь под ваш повод.</p>
+
+        <a class="footer__phone" href="tel:+79037156576" data-reveal>8 903 715-65-76</a>
+        <p class="footer__name" data-reveal>Андрей Беляев · «Домик в три окна»</p>
+
+        <nav class="footer__nav" aria-label="Навигация в подвале">
+          <a href="#domiki">Коллекция</a>
+          <a href="#magnity">Магниты</a>
+          <a href="#dekor">Декор</a>
+          <a href="#ceny">Цены</a>
+        </nav>
+
+        <div class="footer__bottom">
+          <span>© <span id="year">2026</span> «Домик в три окна»</span>
+          <span>Изделия ручной работы из дерева</span>
+        </div>
+      </div>
+    </footer>
   </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Просмотр фотографии">
+    <button class="lightbox__close" type="button" aria-label="Закрыть">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Предыдущее фото">‹</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightbox-img" alt="">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Следующее фото">›</button>
+  </dialog>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
