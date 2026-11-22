@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andrbel218.github.io/domik-v-tri-okna/sitemap.xml
