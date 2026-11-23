@@ -296,6 +296,11 @@ a {
   margin-bottom: clamp(28px, 3.5vw, 42px);
 }
 
+.section-head--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
 .section-head h2 {
   margin: 0 0 16px;
   font-family: var(--font-display);
