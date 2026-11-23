@@ -1,5 +1,5 @@
 /* =========================================================
-   Домик в три окна — сайт-визитка
+   Домик в три оконца — сайт-визитка
    ========================================================= */
 
 :root {
@@ -313,11 +313,34 @@ a {
   color: var(--muted);
 }
 
+.idea-text {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.idea-text .section-head__sub {
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
 .section-head__year {
-  margin: 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 18px 0 0;
   font-size: 10px;
   letter-spacing: 0.22em;
   color: var(--muted-soft);
+}
+
+.year-dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
 }
 
 /* ---------- Buttons ---------- */
@@ -394,6 +417,7 @@ a {
 }
 
 .hero__title em {
+  display: block;
   font-style: italic;
   font-weight: 500;
   color: var(--ochre-deep);
