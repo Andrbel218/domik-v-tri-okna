@@ -15,7 +15,8 @@
 - `assets/img/gallery/` — фотографии, вырезанные из слайдов
 - `assets/img/hero-main.jpg` — фото для первого экрана
 - `assets/img/quote-bg.jpg` — фон блока с цитатой
-- `assets/img/logo-mark.jpg` — логотип (знак дома)
+- `assets/img/logo-correct.png` — полный логотип для подвала
+- `assets/img/logo-mark.jpg` — знак дома для шапки
 - `assets/favicon.svg` — иконка сайта
 
 ## Локальный просмотр
@@ -33,7 +34,7 @@ GitHub Pages, ветка `main`, папка `/ (root)`.
 Адрес: https://andrbel218.github.io/domik-v-tri-okna/
 
 После правок в CSS или JS увеличивайте номер версии в `index.html`
-(`styles.css?v=9`, `script.js?v=9`) — иначе браузеры могут показывать
+(`styles.css?v=10`, `script.js?v=10`) — иначе браузеры могут показывать
 старую версию из кеша.
 
 ## Что заменить после получения материалов
