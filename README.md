@@ -33,7 +33,7 @@ GitHub Pages, ветка `main`, папка `/ (root)`.
 Адрес: https://andrbel218.github.io/domik-v-tri-okna/
 
 После правок в CSS или JS увеличивайте номер версии в `index.html`
-(`styles.css?v=3`, `script.js?v=3`) — иначе браузеры могут показывать
+(`styles.css?v=4`, `script.js?v=4`) — иначе браузеры могут показывать
 старую версию из кеша.
 
 ## Что заменить после получения материалов
