@@ -725,8 +725,9 @@ a {
 
 .price-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.85fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
+  max-width: 940px;
   align-items: start;
 }
 
@@ -807,64 +808,6 @@ a {
   color: var(--muted);
 }
 
-.price-aside {
-  position: sticky;
-  top: 100px;
-  padding: clamp(24px, 3vw, 34px);
-  border-radius: 24px;
-  background: #2f221b;
-  color: #f7ecdc;
-  box-shadow: 0 30px 70px -40px rgba(30, 20, 15, 0.8);
-}
-
-.price-aside__script {
-  margin: 0 0 12px;
-  font-family: var(--font-script);
-  font-size: 27px;
-  line-height: 1.2;
-  color: var(--ochre-light);
-}
-
-.price-aside__text {
-  margin: 0 0 22px;
-  font-size: 14px;
-  line-height: 1.65;
-  color: rgba(247, 236, 220, 0.8);
-}
-
-.price-aside .btn--primary {
-  background: var(--ochre-light);
-  border-color: var(--ochre-light);
-  color: #2b1f19;
-}
-
-.price-aside .btn--primary:hover {
-  background: #f6e2bd;
-  border-color: #f6e2bd;
-}
-
-.price-aside__phone {
-  display: block;
-  margin: 18px 0 6px;
-  font-family: var(--font-display);
-  font-size: 27px;
-  letter-spacing: 0.01em;
-  text-decoration: none;
-  color: #f7ecdc;
-  transition: color 0.2s ease;
-}
-
-.price-aside__phone:hover {
-  color: var(--ochre-light);
-}
-
-.price-aside__note {
-  margin: 0;
-  font-size: 11px;
-  line-height: 1.5;
-  color: rgba(247, 236, 220, 0.55);
-}
-
 /* ---------- Quote ---------- */
 
 .quote {
@@ -896,15 +839,6 @@ a {
 .quote__inner {
   padding: clamp(88px, 11vw, 140px) 0;
   text-align: center;
-}
-
-.quote__label {
-  margin: 0 0 22px;
-  font-size: 10.5px;
-  font-weight: 500;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--ochre-light);
 }
 
 .quote__text {
@@ -1155,16 +1089,6 @@ html.js [data-reveal].is-in {
 
 /* ---------- Responsive ---------- */
 
-@media (max-width: 1020px) {
-  .price-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .price-aside {
-    position: static;
-  }
-}
-
 @media (max-width: 900px) {
   .nav {
     position: absolute;
@@ -1406,10 +1330,6 @@ html.js [data-reveal].is-in {
 
   .price-row__size {
     text-align: left;
-  }
-
-  .price-aside__phone {
-    font-size: 24px;
   }
 
   .quote__text {
