@@ -70,7 +70,6 @@
   /* ---------- Lightbox ---------- */
   const dialog = document.getElementById("lightbox");
   const dialogImg = document.getElementById("lightbox-img");
-  const dialogCaption = document.getElementById("lightbox-caption");
   const closeBtn = dialog ? dialog.querySelector(".lightbox__close") : null;
   const prevBtn = dialog ? dialog.querySelector(".lightbox__nav--prev") : null;
   const nextBtn = dialog ? dialog.querySelector(".lightbox__nav--next") : null;
@@ -94,7 +93,6 @@
     const img = item.querySelector("img");
     dialogImg.src = item.dataset.full || img.src;
     dialogImg.alt = img ? img.alt : "";
-    dialogCaption.textContent = item.dataset.caption || "";
     preload(current + 1);
     preload(current - 1);
   };
