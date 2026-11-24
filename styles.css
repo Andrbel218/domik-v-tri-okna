@@ -212,12 +212,6 @@ a {
   width: 100%;
 }
 
-.header__actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 .burger {
   display: none;
   flex-direction: column;
