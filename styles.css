@@ -212,32 +212,10 @@ a {
   width: 100%;
 }
 
-.nav__phone {
-  display: none;
-}
-
 .header__actions {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.header__phone {
-  padding: 9px 16px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-}
-
-.header__phone:hover {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--cream);
 }
 
 .burger {
@@ -805,19 +783,6 @@ a {
   font-weight: 600;
 }
 
-.tag {
-  padding: 6px 11px;
-  border: 1px solid rgba(78, 106, 80, 0.35);
-  border-radius: 999px;
-  background: rgba(78, 106, 80, 0.08);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--forest);
-  white-space: nowrap;
-}
-
 .price-list {
   margin: 0;
   padding: 0;
@@ -940,24 +905,6 @@ a {
 .footer__logo {
   width: 140px;
   mix-blend-mode: multiply;
-}
-
-.footer__phone {
-  display: block;
-  width: fit-content;
-  margin: 0 auto 8px;
-  padding-bottom: 4px;
-  border-bottom: 1px dashed rgba(233, 200, 143, 0.5);
-  font-family: var(--font-display);
-  font-size: clamp(30px, 4vw, 44px);
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #fbf3e5;
-  transition: color 0.2s ease;
-}
-
-.footer__phone:hover {
-  color: var(--ochre-light);
 }
 
 .footer__name {
@@ -1142,29 +1089,6 @@ html.js [data-reveal].is-in {
     display: flex;
   }
 
-  .nav__phone {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 14px;
-    padding: 13px 20px;
-    border: 1px solid var(--ink);
-    border-radius: 999px;
-    background: var(--ink);
-    color: var(--cream);
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-  }
-
-  .nav a.nav__phone {
-    border-bottom: 0;
-    padding: 13px 20px;
-    font-size: 14px;
-    color: var(--cream);
-  }
-
   .burger {
     display: flex;
   }
@@ -1268,10 +1192,6 @@ html.js [data-reveal].is-in {
   .brand__note {
     font-size: 7px;
     letter-spacing: 0.08em;
-  }
-
-  .header__phone {
-    display: none;
   }
 
   .hero {
